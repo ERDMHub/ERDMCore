@@ -1,4 +1,4 @@
-﻿namespace ERDM.Core
+﻿namespace ERDMCore.Middleware
 {
     public class Class1
     {
