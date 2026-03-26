@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERDM.Core", "ERDM.Core\ERDM.Core.csproj", "{D137930E-983D-4D37-B47D-A84875834B88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERDMCore.Infrastructure.MongoDB", "ERDMCore.Infrastructure.MongoDB\ERDMCore.Infrastructure.MongoDB.csproj", "{8B5FA494-C95F-43D1-AAC2-07E7754D106C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERDMCore.Infrastructure.Caching", "ERDMCore.Infrastructure.Caching\ERDMCore.Infrastructure.Caching.csproj", "{52B10CED-DD79-4E0F-BA34-67F1246A13EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERDMCore.Infrastructure.Messaging", "ERDMCore.Infrastructure.Messaging\ERDMCore.Infrastructure.Messaging.csproj", "{2CBAADED-36F1-4BB1-89C1-3F44EBA2254A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERDMCore.Infrastructure.Logging", "ERDMCore.Infrastructure.Logging\ERDMCore.Infrastructure.Logging.csproj", "{3295A69F-CA8A-47D0-87C5-11524C2549C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERDMCore.Middleware", "ERDMCore.Middleware\ERDMCore.Middleware.csproj", "{BE74C9C0-7D35-49B3-B96B-B8FB09D85621}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D137930E-983D-4D37-B47D-A84875834B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D137930E-983D-4D37-B47D-A84875834B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D137930E-983D-4D37-B47D-A84875834B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D137930E-983D-4D37-B47D-A84875834B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B5FA494-C95F-43D1-AAC2-07E7754D106C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B5FA494-C95F-43D1-AAC2-07E7754D106C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B5FA494-C95F-43D1-AAC2-07E7754D106C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B5FA494-C95F-43D1-AAC2-07E7754D106C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B10CED-DD79-4E0F-BA34-67F1246A13EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B10CED-DD79-4E0F-BA34-67F1246A13EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B10CED-DD79-4E0F-BA34-67F1246A13EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B10CED-DD79-4E0F-BA34-67F1246A13EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBAADED-36F1-4BB1-89C1-3F44EBA2254A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBAADED-36F1-4BB1-89C1-3F44EBA2254A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBAADED-36F1-4BB1-89C1-3F44EBA2254A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBAADED-36F1-4BB1-89C1-3F44EBA2254A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3295A69F-CA8A-47D0-87C5-11524C2549C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3295A69F-CA8A-47D0-87C5-11524C2549C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3295A69F-CA8A-47D0-87C5-11524C2549C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3295A69F-CA8A-47D0-87C5-11524C2549C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE74C9C0-7D35-49B3-B96B-B8FB09D85621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE74C9C0-7D35-49B3-B96B-B8FB09D85621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE74C9C0-7D35-49B3-B96B-B8FB09D85621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE74C9C0-7D35-49B3-B96B-B8FB09D85621}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {569CAFDE-B083-447A-9008-B1FE38069D74}
+	EndGlobalSection
+EndGlobal
