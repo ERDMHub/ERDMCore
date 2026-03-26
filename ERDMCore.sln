@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERDM.Core", "ERDM.Core\ERDM.Core.csproj", "{D137930E-983D-4D37-B47D-A84875834B88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D137930E-983D-4D37-B47D-A84875834B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D137930E-983D-4D37-B47D-A84875834B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D137930E-983D-4D37-B47D-A84875834B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D137930E-983D-4D37-B47D-A84875834B88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {569CAFDE-B083-447A-9008-B1FE38069D74}
+	EndGlobalSection
+EndGlobal
