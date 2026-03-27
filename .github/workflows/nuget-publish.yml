@@ -21,18 +21,6 @@ jobs:
     - name: Get Version from Tag
       run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
 
-    - name: Debug API Key Status
-      run: |
-        if [ -n "${{ secrets.ERDMCORE }}" ]; then
-          echo "✅ API key (ERDMCORE) is configured"
-          echo "Key length: ${#ERDMCORE} characters"
-        else
-          echo "❌ API key (ERDMCORE) is NOT configured"
-          exit 1
-        fi
-      env:
-        ERDMCORE: ${{ secrets.ERDMCORE }}
-
     - name: Restore Dependencies
       run: dotnet restore
 
@@ -50,5 +38,4 @@ jobs:
         dotnet nuget push ./nupkg/*.nupkg \
           --api-key ${{ secrets.ERDMCORE }} \
           --source https://api.nuget.org/v3/index.json \
-          --skip-duplicate \
-          --verbosity detailed
+          --skip-duplicate
