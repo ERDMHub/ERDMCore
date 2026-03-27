@@ -8,7 +8,6 @@
 
 		<!-- NuGet Metadata -->
 		<PackageId>ERDM.Core</PackageId>
-		<Version>1.0.0</Version>
 		<Authors>betalentech</Authors>
 		<Company>betalentech</Company>
 		<Description>Core + Infrastructure modules for ERDM</Description>
@@ -16,17 +15,30 @@
 		<PackageTags>ERDM;Core;Infrastructure;MongoDB;Logging;Caching</PackageTags>
 
 		<RepositoryUrl>https://github.com/your-org/ERDMCore</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
 		<PackageProjectUrl>https://github.com/your-org/ERDMCore</PackageProjectUrl>
 
+		<!-- License -->
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+		<!-- README (MAKE SURE FILE EXISTS) -->
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 
+		<!-- Version (GitHub Actions will override this) -->
+		<Version>1.0.0</Version>
+
+		<!-- Packaging -->
 		<IsPackable>true</IsPackable>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 
 		<!-- Symbols -->
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+		<!-- Debugging / SourceLink -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 
 		<!-- Docs -->
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -35,9 +47,10 @@
 	<!-- External NuGet -->
 	<ItemGroup>
 		<PackageReference Include="MongoDB.Driver" Version="3.7.1" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	</ItemGroup>
 
-	<!-- Project References (IMPORTANT CHANGE) -->
+	<!-- Project References (Bundled into one package) -->
 	<ItemGroup>
 		<ProjectReference Include="..\ERDMCore.Infrastructure.Caching\ERDMCore.Infrastructure.Caching.csproj" PrivateAssets="all" />
 		<ProjectReference Include="..\ERDMCore.Infrastructure.Logging\ERDMCore.Infrastructure.Logging.csproj" PrivateAssets="all" />
@@ -46,7 +59,7 @@
 		<ProjectReference Include="..\ERDMCore.Middleware\ERDMCore.Middleware.csproj" PrivateAssets="all" />
 	</ItemGroup>
 
-	<!-- README -->
+	<!-- README FILE (REQUIRED) -->
 	<ItemGroup>
 		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
