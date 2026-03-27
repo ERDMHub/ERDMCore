@@ -30,9 +30,6 @@ jobs:
     - name: Pack NuGet Packages
       run: dotnet pack --configuration Release -p:PackageVersion=${VERSION} -o ./nupkg
 
-    - name: List Generated Packages
-      run: ls -la ./nupkg/
-
     - name: Publish to NuGet
       run: |
         dotnet nuget push ./nupkg/*.nupkg \
