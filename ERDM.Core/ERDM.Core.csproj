@@ -1,13 +1,54 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
 
-  <ItemGroup>
-    <PackageReference Include="MongoDB.Driver" Version="3.7.1" />
-  </ItemGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NuGet Metadata -->
+		<PackageId>ERDM.Core</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>betalentech</Authors>
+		<Company>betalentech</Company>
+		<Description>Core + Infrastructure modules for ERDM</Description>
+
+		<PackageTags>ERDM;Core;Infrastructure;MongoDB;Logging;Caching</PackageTags>
+
+		<RepositoryUrl>https://github.com/your-org/ERDMCore</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/your-org/ERDMCore</PackageProjectUrl>
+
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+		<!-- Symbols -->
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+		<!-- Docs -->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<!-- External NuGet -->
+	<ItemGroup>
+		<PackageReference Include="MongoDB.Driver" Version="3.7.1" />
+	</ItemGroup>
+
+	<!-- Project References (IMPORTANT CHANGE) -->
+	<ItemGroup>
+		<ProjectReference Include="..\ERDMCore.Infrastructure.Caching\ERDMCore.Infrastructure.Caching.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\ERDMCore.Infrastructure.Logging\ERDMCore.Infrastructure.Logging.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\ERDMCore.Infrastructure.Messaging\ERDMCore.Infrastructure.Messaging.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\ERDMCore.Infrastructure.MongoDB\ERDMCore.Infrastructure.MongoDB.csproj" PrivateAssets="all" />
+		<ProjectReference Include="..\ERDMCore.Middleware\ERDMCore.Middleware.csproj" PrivateAssets="all" />
+	</ItemGroup>
+
+	<!-- README -->
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
