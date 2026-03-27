@@ -14,18 +14,18 @@
 
 		<PackageTags>ERDM;Core;Infrastructure;MongoDB;Logging;Caching</PackageTags>
 
-		<RepositoryUrl>https://github.com/your-org/ERDMCore</RepositoryUrl>
+		<RepositoryUrl>https://github.com/ERDMHub/ERDMCore</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageProjectUrl>https://github.com/your-org/ERDMCore</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/ERDMHub/ERDMCore</PackageProjectUrl>
 
 		<!-- License -->
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 
-		<!-- README (MAKE SURE FILE EXISTS) -->
+		<!-- ✅ README (keep this as filename only) -->
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 
-		<!-- Version (GitHub Actions will override this) -->
+		<!-- Version -->
 		<Version>1.0.0</Version>
 
 		<!-- Packaging -->
@@ -50,7 +50,7 @@
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	</ItemGroup>
 
-	<!-- Project References (Bundled into one package) -->
+	<!-- Project References -->
 	<ItemGroup>
 		<ProjectReference Include="..\ERDMCore.Infrastructure.Caching\ERDMCore.Infrastructure.Caching.csproj" PrivateAssets="all" />
 		<ProjectReference Include="..\ERDMCore.Infrastructure.Logging\ERDMCore.Infrastructure.Logging.csproj" PrivateAssets="all" />
@@ -59,9 +59,9 @@
 		<ProjectReference Include="..\ERDMCore.Middleware\ERDMCore.Middleware.csproj" PrivateAssets="all" />
 	</ItemGroup>
 
-	<!-- README FILE (REQUIRED) -->
+	<!-- ✅ FIXED README INCLUDE FROM ROOT -->
 	<ItemGroup>
-		<None Include="README.md" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>
