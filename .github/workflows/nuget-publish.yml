@@ -27,12 +27,12 @@ jobs:
     - name: Build Project
       run: dotnet build --configuration Release --no-restore
 
-    - name: Pack NuGet Package
+    - name: Pack NuGet Packages
       run: dotnet pack --configuration Release -p:PackageVersion=${VERSION} -o ./nupkg
 
     - name: Publish to NuGet
       run: |
         dotnet nuget push ./nupkg/*.nupkg \
-          --api-key ${{ secrets.NUGET_API_KEY }} \
+          --api-key ${{ secrets.ERDMCORE }} \
           --source https://api.nuget.org/v3/index.json \
           --skip-duplicate
