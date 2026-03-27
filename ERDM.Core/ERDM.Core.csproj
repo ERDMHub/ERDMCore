@@ -51,13 +51,6 @@
 	</ItemGroup>
 
 	<!-- Project References -->
-	<ItemGroup>
-		<ProjectReference Include="..\ERDMCore.Infrastructure.Caching\ERDMCore.Infrastructure.Caching.csproj" PrivateAssets="all" />
-		<ProjectReference Include="..\ERDMCore.Infrastructure.Logging\ERDMCore.Infrastructure.Logging.csproj" PrivateAssets="all" />
-		<ProjectReference Include="..\ERDMCore.Infrastructure.Messaging\ERDMCore.Infrastructure.Messaging.csproj" PrivateAssets="all" />
-		<ProjectReference Include="..\ERDMCore.Infrastructure.MongoDB\ERDMCore.Infrastructure.MongoDB.csproj" PrivateAssets="all" />
-		<ProjectReference Include="..\ERDMCore.Middleware\ERDMCore.Middleware.csproj" PrivateAssets="all" />
-	</ItemGroup>
 
 	<!-- ✅ FIXED README INCLUDE FROM ROOT -->
 	<ItemGroup>
