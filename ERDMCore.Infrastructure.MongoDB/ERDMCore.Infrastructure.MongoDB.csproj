@@ -7,7 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Microsoft.OpenApi" Version="3.5.0" />
+    <PackageReference Include="MongoDB.Bson" Version="3.7.1" />
     <PackageReference Include="MongoDB.Driver" Version="3.7.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ERDM.Core\ERDM.Core.csproj" />
+    <ProjectReference Include="..\ERDMCore.Middleware\ERDMCore.Middleware.csproj" />
   </ItemGroup>
 
 </Project>
